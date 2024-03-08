@@ -1,0 +1,13 @@
+diff --git a/c10/macros/Macros.h b/c10/macros/Macros.h
+index 6cb10f4..1964212 100644
+--- a/c10/macros/Macros.h
++++ b/c10/macros/Macros.h
+@@ -393,7 +393,7 @@ __host__ __device__
+     __assert_fail(
+         const char* assertion,
+         const char* file,
+-        unsigned int line,
++        int line,
+         const char* function) noexcept __attribute__((__noreturn__));
+
+ #endif // __SYCL_DEVICE_ONLY__
